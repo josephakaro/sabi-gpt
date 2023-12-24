@@ -1,4 +1,4 @@
-import OpenAI from "openai";
+import { OpenAI } from "openai";
 import dotenv from "dotenv";
 import realineSync from "readline-sync";
 import colors from "colors";
@@ -37,7 +37,7 @@ async function main() {
         ""
       );
       console.log(
-        colors.bold.green("Bot🤖:") + colors.bold.white(completionText)
+        colors.bold.green("Bot 🤖:") + colors.bold.white(completionText)
       );
 
       // Update the history with the completion
@@ -46,13 +46,13 @@ async function main() {
 
       if (userInput === "exit" || userInput === "quit") {
         console.log(
-          colors.bold.green("Bot👋🏾:") + colors.bold.yellow(completionText)
+          colors.bold.green("Bot 👋🏾:") + colors.bold.yellow(completionText)
         );
         break;
       }
     } catch (error) {
       const errorText = "Something went wrong. Please try again.";
-      console.log(colors.bold.green("Bot❗:") + colors.bold.red(errorText));
+      console.log(colors.bold.green("Bot 🤦🏾‍♂️:") + colors.bold.red(errorText));
     }
   }
 }
