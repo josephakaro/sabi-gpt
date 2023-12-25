@@ -1,6 +1,7 @@
 {
   "name": "chatbot",
   "version": "1.0.0",
+  "private": true,
   "description": "Chatbot Powered by ChatGPT-3",
   "main": "main.js",
   "type": "module",

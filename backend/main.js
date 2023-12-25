@@ -32,10 +32,7 @@ async function main() {
       });
 
       // Get completion from the API response
-      const completionText = response.choices[0].message.content.replace(
-        "\n\t\r",
-        ""
-      );
+      const completionText = response.choices[0].message.content;
       console.log(
         colors.bold.green("Bot 🤖:") + colors.bold.white(completionText)
       );
