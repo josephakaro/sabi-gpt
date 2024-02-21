@@ -8,6 +8,9 @@ function App() {
       <div className="new-chat">
         <p>New Chat</p>
       </div>
+      <div className="Author">
+        <p>Developed by: Joseph Akaro</p>
+      </div>
     </div>
     <div className="main">
     </div>
