@@ -8,7 +8,7 @@ function App() {
     <div className="sidebar">
      
       <div className="new-chat">
-        <p>New Chat</p>
+        <span>New Chat</span>
       </div>
      
       <div className="history">
