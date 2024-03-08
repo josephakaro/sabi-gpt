@@ -1,18 +1,11 @@
 import './App.css';
+import Fragement from 'react';
 
 function App() {
-  return(
-    <>
-    <div className="container">
-    <div className="sidebar">
-      <div className="new-chat">
-        <p>New Chat</p>
-      </div>
-    </div>
-    <div className="main">
-    </div>
-    </div>
-    </>
+  return (
+    <Fragement>
+
+    </Fragement>
   )
 }
 
