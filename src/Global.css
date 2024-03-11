@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --color-first: #053B50;
+    --color-second: #176B87;
+    --color-third: #64ccc5;
+    --color-forth: #EEEEEE;
+
+    /* --background-image: url(https://www.pexels.com/photo/grayscale-photography-of-elephants-16023); */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Inter, sans-serif;
+}
+
+body{
+    background-color: var(--color-second);
+
+    height: 100%;
+    width: 100%;
+}

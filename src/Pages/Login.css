@@ -1,0 +1,22 @@
+:root{
+    --color-first: #053B50;
+    --color-second: #176B87;
+    --color-third: #64ccc5;
+    --color-forth: #EEEEEE;
+
+    /* --background-image: url(https://www.pexels.com/photo/grayscale-photography-of-elephants-16023); */
+}
+
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 400px;
+    height: 600px;
+}
+
+.login-container header{
+    color: var(--color-first);
+}
