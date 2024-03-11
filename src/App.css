@@ -2,12 +2,14 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: whitesmoke;
+
+  list-style-type: none;
 }
-/* Container */
+/* === Container === */
 
 body{
   background-color: #282828;
+  color: whitesmoke;
 }
 
 .container{
@@ -18,7 +20,7 @@ body{
   width: 100vw;
 }
 
-/* Sidebar */
+/* === Sidebar === */
 .sidebar{
   background-color: #141414;
   width: 300px;
@@ -27,24 +29,157 @@ body{
   padding: 10px;
 
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   justify-items: center;
+
+  gap: 10px;
 }
 
-.new-chat{
+.new-chat, .history, .author{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  justify-items: center;
 
   width: 100%;
 }
 
-/* Main */
+.new-chat{
+  align-items: center;
+
+  background-color: #282828;
+
+  height: 40px;
+
+  border-radius: 5px;
+
+  margin-bottom: 20px;
+}
+
+.history{
+  height: 100%;
+  overflow: scroll;
+}
+
+.history ul{
+  display: flex;
+  flex-direction: column;
+
+  justify-content: flex-start;
+
+  height: 100%;
+
+  margin-left: 5px;
+}
+
+.history ul li{
+  margin-bottom: 5px;
+  padding: 5px;
+
+  cursor: pointer;
+}
+
+.author{
+  align-items: center;
+
+  height: 60px;
+
+  border-top: 1px solid #282828;
+}
+
+/* === Main === */
 .main{
   width: 100%;
   height: 100vh;
 
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.responds{
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.suggestions ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 200px;
+
+  gap:10px;
+}
+
+.suggestions ul li{
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  height: 100px;
+
+  border-radius: 5px;
+
   padding: 10px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+
+  cursor: pointer;
+}
+
+.prompt{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+
+  color: rgba(255, 255, 255, 0.2);
+}
+
+input{
+  width: 100%;
+  height: 40px;
+
+  border-radius: 5px;
+  border: rgba(255, 255, 255, 0.2);
+
+  padding: 10px;
+
+  margin-bottom: 10px;
+
+  font-size: 18px;
+
+  outline-style: none;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* ========== ACTIONS =========*/
+
+/* New Chat */
+.new-chat:hover{
+  opacity: .5;
+
+  cursor: pointer;
+}
+
+.history ul li:hover{
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+.suggestions ul li:hover{
+  transition: ease;
+  opacity: .2;
 }
