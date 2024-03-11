@@ -4,28 +4,26 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Landing from './Pages/Landing';
-import Login from "./Pages/Login";
-import Team from "./Pages/Team"
 
+import Home from "./Home";
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Landing />
+    element: <Home />
   },
-  {
-    path: '/landing',
-    element: <Landing />
-  },
-  {
-    path: '/login',
-    element: <Login />,
-  },
-  {
-    path: '/team',
-    element: <Team />
-  }
+  // {
+  //   path: '/home',
+  //   element: <Landing />
+  // },
+  // {
+  //   path: '/signup',
+  //   element: <Login />,
+  // },
+  // {
+  //   path: '/login',
+  //   element: <Team />
+  // }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
