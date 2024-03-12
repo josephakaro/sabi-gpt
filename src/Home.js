@@ -27,7 +27,7 @@ function Home() {
                         <div className="landing-title">
                             <h1>Introducing Sora:</h1>
                             <h1>Creating video from text</h1>
-                            <span>Learn more about Sora</span>
+                            <a href="#">Learn more about Sora</a>
                         </div>
                     </div>
                     <div className="main-paragraphs">
@@ -53,9 +53,9 @@ function Home() {
                                 <p>Our work to create safe and beneficial AI requires a deep understanding of the potential risks and benefits, as well as careful consideration of the impact.</p>
                                 <a href="#">Learn about safty</a>
                             </div>
-                            <div className="section-image">
-                                <img alt="image here!" />
-                            </div>
+                        </div>
+                        <div className="section-image">
+                            <img alt="image here!" />
                         </div>
                         <div className="seaction-3">
                             <div className="section-title">
