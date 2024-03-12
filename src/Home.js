@@ -1,7 +1,27 @@
+import './Global.css';
+
 function Home() {
     return (
         <>
             <div className="container-main">
+                <nav className="nav-header">
+                    <div className="nav-logo">
+                        <i className="bx bxs-network-chart"></i>
+                        <span>SabiAI</span>
+                    </div>
+                    <ul>
+                        <li><a href="#">Overview</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">GPT-4</a></li>
+                        <li><a href="#">DALL.E 3</a></li>
+                        <li><a href="#">Sora</a></li>
+                    </ul>
+                    <div className="nav-menu">
+                        <a href="#">Search</a>
+                        <a href="#">Login</a>
+                        <a href="#">Try SabiGPT</a>
+                    </div>
+                </nav>
                 <main className="main-body">
                     <div className="main-landing">
                         <div className="landing-title">
