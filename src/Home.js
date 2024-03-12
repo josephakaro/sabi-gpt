@@ -32,15 +32,15 @@ function Home() {
                     </div>
                     <div className="main-paragraphs">
                         <div className="section-1">
-                            <div className="paragraph-1">
+                            <div className="paragraph">
                                 <h2>Pioneering research on the path to AGI</h2>
                                 <a href="#">Learn about our Research</a>
                             </div>
-                            <div className="paragraph-2">
+                            <div className="paragraph">
                                 <h2>Transforming work and creativity with AI</h2>
                                 <a href="#">Learn about our products</a>
                             </div>
-                            <div className="paragraph-3">
+                            <div className="paragraph">
                                 <h2>Join us in shaping the future of technology</h2>
                                 <a href="#">View careers</a>
                             </div>
